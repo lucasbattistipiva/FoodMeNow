@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 150vw 150vh;
+}
+
+html::-webkit-scrollbar {
+    background-color: #cfcfcf;
+    width: .75em;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff9f9;
+    border-radius: 25px;
+}
+
+header {
+    font-family: 'Segoe UI';
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 3.4em;
+    color: #eee;
+    filter: drop-shadow(0px 0px 2px #00000050);
+    text-shadow: 0 0 1.5px #00000075;
+    font-weight: 1000;
+    letter-spacing: .5px;
+    position: absolute;
+}
+
+header img {
+    position: absolute;
+    top: -100px;
+    filter: brightness(.8);
+    width: calc(100% + 300px);
+    height: calc(50vh + 100px);
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #00000075;
+    font-size: 17px;
+    height: 60px;
+    backdrop-filter: blur(10px);
+    color: #eee;
+    z-index: 500;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ul li a:hover {
+    background-image: linear-gradient(45deg, #ffffff10, #ffffff20);
+}
+
+ul li img{
+    height: auto;
+    width: 35px;
+    aspect-ratio: 1;
+    filter: invert(1);
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/037/248/393/non_2x/ai-generated-pizza-advertisment-background-with-copy-space-free-photo.jpg');
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    z-index: -500;
+    backdrop-filter: blur(5px);
+}
+
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+    background-color: #ff000070;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding-block: 50px;
+    padding-inline: 50px;
+    box-shadow: 0 0 10px 5px #00000025;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ddd;
+}
+
+#square input{
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    caret-color: #ddd;
+    letter-spacing: .2px;
+    top: 0px;
+    color: #ddd;
+    font-size: 17px;
+    transition: border-color .25s;
+    padding-left: 5px;
+}
+
+label {
+    position: absolute;
+    letter-spacing: .2px;
+    top: 3px;
+    left: 0;
+    color: #fff;
+    transition: all .1s;
+    left: 5px;
+    cursor: text;
+}
+
+:is(input, button):focus {
+    outline: none;
+}
+
+:is(input:focus~label, input:valid~label) {
+    color: #ddd;
+    font-size: 15px;
+    top: -1.1rem;
+}
+
+.pass-box, .name-box {
+    position: relative;
+    margin-block: 20px;
+}
+
+form button {
+    margin-top: 25px;
+    padding-block: 7.5px;
+    width: calc(100% + 10px);
+    border: 0;
+    background-color: #cc0000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ddd;
+}
+
+form button:hover {
+    background-color: #bb0000;
+    cursor: pointer;
+}
